@@ -34,6 +34,19 @@ a{
   font-size: 0.9rem;
   color: white;
 }
+h1{
+  font-size: 1.5rem;
+}
+hr{
+  border: solid 1px rgb(255,255, 255, 0.1);
+  margin: 12px 0;
+}
+h4{
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #494949;
+  margin-left: 20px;
+}
 
 i{
   font-size: 1.5rem;
@@ -201,4 +214,40 @@ p,a{
 .sidebar-item:hover{
   background-color: #494949;
  
+}
+.content{
+  grid-area: content;
+ 
+}
+.chips-warpper{
+  background-color: #121212;
+  display: flex;
+  padding-left: 14px;
+  border-top: 1px solid rgba(255,255,255, 0.1 );
+  border-bottom: 1px solid  rgba(255,255,255, 0.1 ) ;
+  max-width: calc(100vw - 240px);
+  overflow-x: scroll;
+  white-space: nowrap;
+ 
+}
+.chips-warpper::-webkit-scrollbar{
+  height: 6px;
+}
+.chips-warpper:hover::-webkit-scrollbar-thumb{
+  background: #494949;
+}
+
+
+.chips{
+  margin: 12px 6px;
+  background-color: #313131;
+  padding: 6px 12px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 16px;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.chips:hover{
+  background-color: aliceblue;
 }
