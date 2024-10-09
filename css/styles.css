@@ -173,3 +173,32 @@ p,a{
    background-color: #494949;
    transition: 0.5s;
 }
+.sidebar{
+  grid-area: sidebar;
+  background-color: #202020;
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+.sidebar-items{
+  display: flex;
+  flex-direction: column ;
+  padding: 0 14px;
+}
+.sidebar-item{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding:0 20px;
+  border-radius: 10px;
+  transition: 0.5s;
+ 
+  
+}
+.sidebar i{
+  margin-right: 24px;
+}
+
+.sidebar-item:hover{
+  background-color: #494949;
+ 
+}
