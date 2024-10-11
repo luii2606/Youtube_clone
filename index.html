@@ -8,565 +8,567 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
   <title>Document Youtube</title>
 </head>
-<body>
+<body class="contenido">
+  <!-- header  -->
   <header class="header">
     <!-- Contenedor Logo -->
-    <div class="logo-container">
-      <a href="#">
-       <i class="ri-menu-line"></i>
-    </a>
-          <div class="logo">
+    <div class="contenedor">
+      <a href="#" class="logo__menu">
+       <i class="icono ri-menu-line"></i>
+      </a>
+          <div class="contenedor__logo">
             <div class="logo-img">
-              <img src="img/logo.png" alt="logo">
+              <img class="imagenes" src="img/logo.png" alt="logo">
             </div>
-            <h1>Youtube</h1>
+            <h1 class="titulo">Youtube</h1>
     </div>
     </div>
       <!-- contenedor Busquedas -->
-    <div class="search-container">
-      <form action="">
-        <input type="text" placeholder="Buscar">
-        <button>
-          <i class="ri-search-line"></i>
+    <div class="contenedor-busquedas">
+      <form class="contenedor__formulario" action="">
+        <input class="contenedor__barranav" type="text" placeholder="Buscar">
+        <button class="contenedor__micro">
+          <i class="icono ri-search-line"></i>
         </button>
       </form>
-      <button>
-        <i class="ri-mic-line"></i>
+      <button class="contenedor__micro contenedor__micro--fondo-gris">
+        <i class= " icono ri-mic-line"></i>
       </button>
     </div>
     <!-- contenedor perfil -->
-    <div class="profile-container">
-      <a href="#">
-        <i class="ri-video-add-line"></i>
+    <div class="contenedor-perfil">
+      <a class="contenedor-perfil__logo contenedor-perfil__logo--fondo-gris" href="#">
+        <i class="icono ri-video-add-line"></i>
       </a>
-      <a href="#">
-        <i class="ri-notification-line"></i>
+      <a class="contenedor-perfil__logo contenedor-perfil__logo--fondo-gris" href="#">
+        <i class="icono ri-notification-line"></i>
       </a>
         
         <div class="img-perfil">
-          <img  src="img/mikasa-500x500.jpg" alt="perfil">
+          <img class="imagenes" src="img/mikasa-500x500.jpg" alt="perfil">
           </div>
     </div>
   </header>
+    <!-- sidebar -->
   <aside class="sidebar">
-    <div class="sidebar-items">
-      <a href="#" class="sidebar-item"><i class="ri-home-5-line"></i><samp>Home</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-compass-3-line"></i><samp>Explore</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-wireless-charging-line"></i><samp>Shorts</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-rss-line"></i><samp>Subcripciones</samp></a>
+    <div class="sidebar__items">
+      <a href="#" class="sidebar__item"><i class="icono ri-home-5-line"></i><samp>Home</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-compass-3-line"></i><samp>Explore</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-wireless-charging-line"></i><samp>Shorts</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-rss-line"></i><samp>Subcripciones</samp></a>
        <!-- separación -->
-      <hr>
-      <a href="#"class="sidebar-item"><i class="ri-links-line"></i></i><samp>Library</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-history-line"></i><samp>History</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-rss-line"></i><samp>Your videos</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-time-line"></i><samp>Watch videos</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-play-list-2-line"></i><samp> All videos</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-arrow-down-line"></i><samp>Show more</samp></a>
-      <hr>
-      <h4>more from youtube</h4>
-      <a href="#"class="sidebar-item"><i class="ri-keyboard-box-fill"></i></i><samp>Gaming</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-live-line"></i><samp>Live</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-award-line"></i></i><samp>Sports</samp></a>
-      <hr>
-      <a href="#"class="sidebar-item"><i class="ri-settings-5-fill"></i></i><samp>Settings</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-flag-line"></i></i><samp>Report history</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-question-line"></i></i><samp>Help</samp></a>
-      <a href="#"class="sidebar-item"><i class="ri-feedback-line"></i></i><samp>Send feedback</samp></a>
+      <hr class="separador">
+      <a href="#"class="sidebar__item"><i class="icono ri-links-line"></i></i><samp>Library</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-history-line"></i><samp>History</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-rss-line"></i><samp>Your videos</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-time-line"></i><samp>Watch videos</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-play-list-2-line"></i><samp> All videos</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-arrow-down-line"></i><samp>Show more</samp></a>
+      <hr class="separador">
+      <h4 class="text__sidebar">more from youtube</h4>
+      <a href="#"class="sidebar__item"><i class="icono ri-keyboard-box-fill"></i></i><samp>Gaming</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-live-line"></i><samp>Live</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-award-line"></i></i><samp>Sports</samp></a>
+      <hr class="separador">
+      <a href="#"class="sidebar__item"><i class="icono ri-settings-5-fill"></i></i><samp>Settings</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-flag-line"></i></i><samp>Report history</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-question-line"></i></i><samp>Help</samp></a>
+      <a href="#"class="sidebar__item"><i class="icono ri-feedback-line"></i></i><samp>Send feedback</samp></a>
 
       
     
     </div>
   </aside>
-<!-- main -->
+<!-- main -->  <!-- chips -->
   <main class="content">
-    <div class="chips-warpper">
-      <div class="chips">
-        <p>All</p>
+    <div class="chips">
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">All</p>
       </div>
-      <div class="chips">
-        <p>HTML</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">HTML</p>
       </div>
-      <div class="chips">
-        <p>CSS</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">CSS</p>
       </div>
-      <div class="chips">
-        <p>Responsive desing</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">Responsive desing</p>
       </div>
-      <div class="chips">
-        <p>UI desing</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">UI desing</p>
       </div>
-      <div class="chips">
-        <p>JavaScript</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">JavaScript</p>
       </div>
-      <div class="chips">
-        <p>React</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">React</p>
       </div>
-      <div class="chips">
-        <p>UI/UX</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">UI/UX</p>
       </div>
-      <div class="chips">
-        <p>Java</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">Java</p>
       </div>
-      <div class="chips">
-        <p>PHP</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">PHP</p>
       </div>
-      <div class="chips">
-        <p>Node js</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">Node js</p>
       </div>
-      <div class="chips">
-        <p>Mysql</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">Mysql</p>
       </div>
-      <div class="chips">
-        <p>ORACLE</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">ORACLE</p>
       </div>
-      <div class="chips">
-        <p>UML</p>
+      <div class="chips__items chips__items--fondo--borde-redondo">
+        <p class="chips__parrafo">UML</p>
       </div>
     </div>
         <!-- content -->
-    <div class="video-container">
-      <div class="video-container-cover">
-        <div class="video-content">
+    <div class="video">
+      <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-1.jpg" alt="img 1">
+            <img class="imagenes" src="img/img-1.jpg" alt="img 1">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div> 
           </div>
         </div>
-      </div>
-            <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+            <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-2.jpg" alt="img 2">
+            <img class="imagenes" src="img/img-2.jpg" alt="img 2">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>
 
-      <div class="video-container-cover">
-        <div class="video-content">
+      <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-3.jpg" alt="img 3">
+            <img class= "imagenes"src="img/img-3.jpg" alt="img 3">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class= "imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>
 
-        <div class="video-container-cover">
-        <div class="video-content">
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-4.jpg" alt="img 4">
+            <img class= "imagenes" src="img/img-4.jpg" alt="img 4">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class= "imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-5.jpg" alt="img 5">
+            <img class="imagenes" src="img/img-5.jpg" alt="img 5">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-6.jpg" alt="img 6">
+            <img class="imagenes" src="img/img-6.jpg" alt="img 6">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-7.jpg" alt="img 7">
+            <img class="imagenes" src="img/img-7.jpg" alt="img 7">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-8.jpg" alt="img 8">
+            <img class="imagenes" src="img/img-8.jpg" alt="img 8">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-9.jpg" alt="img 9">
+            <img class="imagenes" src="img/img-9.jpg" alt="img 9">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-10.jpg" alt="img 10">
+            <img class="imagenes" src="img/img-10.jpg" alt="img 10">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-11.jpg" alt="img 11">
+            <img class="imagenes" src="img/img-11.jpg" alt="img 11">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-12.jpg" alt="img 12">
+            <img class="imagenes" src="img/img-12.jpg" alt="img 12">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-13.jpg" alt="img 13">
+            <img class="imagenes" src="img/img-13.jpg" alt="img 13">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
               <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="vide__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-14.jpg" alt="img 14">
+            <img class="imagenes" src="img/img-14.jpg" alt="img 14">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-15.jpg" alt="img 15">
+            <img class="imagenes" src="img/img-15.jpg" alt="img 15">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-16.jpg" alt="img 16">
+            <img class="imagenes" src="img/img-16.jpg" alt="img 16">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-17.jpg" alt="img 17">
+            <img class="imagenes" src="img/img-17.jpg" alt="img 17">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-18.jpg" alt="img 18" >
+            <img class="imagenes" src="img/img-18.jpg" alt="img 18" >
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-19.jpg" alt="img 19">
+            <img class="imagenes" src="img/img-19.jpg" alt="img 19">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-20.jpg" alt="img 20">
+            <img class="imagenes" src="img/img-20.jpg" alt="img 20">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-          <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+          <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-21.jpg" alt="img 21">
+            <img class="imagenes" src="img/img-21.jpg" alt="img 21">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <div class="video-container-cover">
-        <div class="video-content">
+      </div>
+        <div class="video__container">
+        <div class="video__content video__content--fondo-gris">
           <a href="#" class="video-box">
-            <img src="img/img-22.jpg" alt="img 22">
+            <img class="imagenes" src="img/img-22.jpg" alt="img 22">
           </a>
           <div class="video-detail">
             <div class="chanel-logo">
-              <img src="img/mikasa-500x500.jpg" alt="logo">
+              <img class="imagenes" src="img/mikasa-500x500.jpg" alt="logo">
             </div>
-            <div class="detail">
-              <h3 class="title">Clon Youtube Flexbox and Grid CSS</h3>
-              <div class="chanel-name">Luisa Ramos</div>
-              <div class="views-upload">
+            <div class="informacion">
+              <h3 class="informacion__title">Clon Youtube Flexbox and Grid CSS</h3>
+              <div class="informacion__name">Luisa Ramos</div>
+              <div class="informacion__upload">
                 <div class="views">28K views</div>
                 <div class="upload">1 year ago</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>
     </div>
   </main>
 </body>

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(header.css);
+@import url(sidebar.css);
+@import url(content.css);
 
 *{
   margin: 0;
@@ -7,356 +10,44 @@
   font-family: "Roboto",sans-serif;
 }
 
-/* 
-layout 
-*/
-
-body{
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 56px 1fr;
-  grid-template-areas: 
-  'header header'
-  'sidebar content';
-  height: 100vh;
-}
-
-img{
-  position:absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /*se ajuste al contenido */
-}
-a{
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: white;
-}
-h1{
-  font-size: 1.5rem;
-}
-hr{
-  border: solid 1px rgb(255,255, 255, 0.1);
-  margin: 12px 0;
-}
-h4{
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  color: #494949;
-  margin-left: 20px;
-}
-
-i{
-  font-size: 1.5rem;
-}
-p,a{
-  font-size: 0.9rem;
-}
-::-webkit-scrollbar{
-  width: 8px;
+:root{
+  --blanco:white;
+  --gris-claro: #494949;
+  --borde-gris-medio-claro:solid 1px rgb(255,255, 255, 0.1);
+  --gris-oscuro: #202020;
+  --gris-negro:#121212;
+  --gris:#313131;
+  --gris-mas-negro:#181818;
+  --blanco-hueso:#aaa;
 
 }
-::-webkit-scrollbar-thumb{
-  background-color: transparent;
-  border-radius: 5px;
-}
-.sidebar::-webkit-scrollbar-thumb{
-  background-color: #494949;
-}
 
-.header{
-  grid-area: header;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #202020;
-  width: 100%;
-  height: 56px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-  gap: 6px;
-  /* align-items: center; */
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  
-}
-
-.logo{
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  /* position: relative; */
-  
-}
-
-.logo-img{
-  position: relative;
-  height: 25px;
-  width: 30px;
-}
-
-.logo h1{ 
-   letter-spacing: -1px;     /*separa las letras de un apalabra */
-  color: white;
-}
-.search-container{
-  display:flex;
-  align-items: center;
-  gap: 6px;
-   flex: 0 1 680px; /*factor de crecimiento */
-
-
-}
-.search-container form{
-  position: relative;
-  width: 100%;
-  display: flex;
-  
-}
-.search-container input{
-  height: 40px;
-  width: 100%;
-  background-color: #121212;
-  color: #f2f2f2;
-  padding: 12px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255,0.1);
-  border-radius:10px 0px 0px 10px ;
-}
-.search-container button{
-  width: 40px;
-  min-width: 40px;
-  height: 40px;
-  background-color: #313131;
-  color:white;
-  outline: none;
-  border: none;
-  border-radius: 0px 10px 10px 0px;
-  cursor: pointer;
-  font-size: 15px;
-}
-.search-container button:hover{
-  background-color: #494949;
-  transition: 0.5s;
-}
-.search-container form ~ button{ 
-  border-radius: 50%;
-  
-}
-.profile-container {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  
-}
-.img-perfil {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  
-}
-.img-perfil img{
-  border-radius: 50%;
-  
-}
-.profile-container a{
-  display: flex;
-  width: 40px;
-  min-width: 40px;
-  height: 40px;
-  background-color: #313131;
-  color:white;
-  border-radius:50%;
-  cursor: pointer;
-  font-size: 15px;
-  justify-content: center;
-  align-items: center;
-  
-}
-.profile-container a:hover{
-   background-color: #494949;
-   transition: 0.5s;
-}
-.sidebar{
-  grid-area: sidebar;
-  background-color: #202020;
-  padding-top: 10px;
-  overflow-y: scroll;
-}
-.sidebar-items{
-  display: flex;
-  flex-direction: column ;
-  padding: 0 14px;
-}
-.sidebar-item{
-  height: 40px;
-  display: flex;
-  align-items: center;
-  padding:0 20px;
-  border-radius: 10px;
-  transition: 0.5s;
- 
-  
-}
-.sidebar i{
-  margin-right: 24px;
-}
-
-.sidebar-item:hover{
-  background-color: #494949;
- 
-}
-.content{
-  grid-area: content;
- 
-}
-.chips-warpper{
-  background-color: #121212;
-  display: flex;
-  padding-left: 14px;
-  border-top: 1px solid rgba(255,255,255, 0.1 );
-  border-bottom: 1px solid  rgba(255,255,255, 0.1 ) ;
-  max-width: calc(100vw - 240px);
-  overflow-x: scroll;
-  white-space: nowrap;
- 
-}
-.chips-warpper::-webkit-scrollbar{
-  height: 6px;
-}
-.chips-warpper:hover::-webkit-scrollbar-thumb{
-  background: #494949;
-}
-
-
-.chips{
-  margin: 12px 6px;
-  background-color: #313131;
-  padding: 6px 12px;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 16px;
-  white-space: nowrap;
-  transition: 0.5s;
-}
-.chips:hover{
-  background-color: aliceblue;
-}
-.video-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: max-content;
-  gap: 18px;
-  padding: 20px;
-  background-color: #181818;
-  overflow-y: scroll;
-  height: calc(100vh - 118px);
-}
-
-.video-container:hover::-webkit-scrollbar-thumb {
-  background-color: #373737;
-}
-
-.video-container-cover {
-  position: relative;
-  transition: 0.5s;
-}
-
-.video-content {
-  margin-bottom: 25px;
-  position: relative;
-  width: 100%;
-  padding: 8px;
-  border-radius: 12px;
-  transition: 1s;
-}
-
-.video-content:hover {
-  background-color: #373737;
-}
-
-.video-box {
-  position: relative;
-  width: auto;
-  height: 145px;
-  display: block;
-}
-
-.video-box img {
-  object-fit: cover; 
-  border-radius: 12px;
-}
-
-.video-detail {
-  display: flex;
-  color: #fff;
-  padding-top: 12px;
-}
-
-.chanel-logo {
-  position: relative;
-  min-width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.detail {
-  margin-left: 12px;
-}
-
-.title {
-  font-size: 0.9rem;
-}
-
-.chanel-name {
-  font-size: 0.8rem;
-  margin-top: 10px;
-  color: #aaa;
-}
-
-.views-upload {
-  display: flex;
-  font-size: 0.8rem;
-  margin-top: 4px;
-  color: #aaa;
-  gap: 10px;
-}
 
 @media(max-width:1200px) {
-  body {
+  .contenido {
     grid-template-columns: 70px 1fr;
   }
 
-  .sidebar-items span,
-  .sidebar-items h4 {
+  .sidebar__items span,
+  .sidebar__items h4 {
     display: none;
   }
 
-  .sidebar-items {
+  .sidebar__items {
     padding: 0;
   }
 
-  .sidebar-item {
+  .sidebar__item {
     padding: 0 20px;
   }
 
-  .chip-warpper {
+  .chips {
     max-width: calc(100vw - 70px);
   }
 }
 
 @media(max-width:800px) {
-  .search-container {
+  .contenedor-busquedas {
     display: none;
   }
 }
